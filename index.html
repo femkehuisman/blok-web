@@ -10,11 +10,15 @@
 
 <body>
     <header>
-        <h1>NS</h1>
+        <h1>NS Verhalen</h1>
         <nav>
             <ul>
-                <li> <a href="">Zoeken</a></li>
-                <li><a href="login.html">Profiel</a></li>
+                <li>
+                    <a href=""><img src="images/search.svg" alt="zoek icon" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/profiel.svg" alt="profiel" /></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -22,7 +26,8 @@
     <section>
         <form action="#">
             <h3>Kies een categorie</h3>
-            <select name="Alle verhalen">
+            <select name="Categoriën">
+                <option value="Alle verhalen">Aparte schrijfstijl</option>
                 <option value="Aparte schrijfstijl">Aparte schrijfstijl</option>
                 <option value="Humor">Humor</option>
                 <option value="Vrolijk">Vrolijk</option>
@@ -31,24 +36,39 @@
                 <option value="Gedicht">Gedicht</option>
                 <option value="Spannend">Spannend</option>
             </select>
-
         </form>
     </section>
 
     <main>
 
+        <section>
+            <p>100 verhalen in alle categoriën</p>
+            <form action="#">
+                <select name="Sorteren">
+                    <option value="Aanbevolen">Aanbevolen</option>
+                    <option value="Populair">Populair</option>
+                    <option value="Meest gelezen">Meest gelezen</option>
+                </select>
+            </form>
+        </section>
 
         <article>
             <header>
+                <img src="images/kinderen_confetti.jpg" alt="kinderen met confetti">
                 <h2>Nichterig</h2>
-                <p>Dus ik stap de bus uit, met mijn zoon in mijn wagen, en ik schrik me daar toch het apenlazarus zeg! Werkelijk heel de omgeving rond Centraal Station is open gebroken! Ik zweer het je, één grote bouwput. En dan miezerde het ook nog een beetje, dus kun je nagaan. Dat werd me toch een kliederboel! Maar goed, ik moest nu eenmaal naar de biep. Ik wilde Stijloefeningen van Raymundo Queneau lezen, de schat... <a href="">lees verder</a>
+                <p>Dus ik stap de bus uit, met mijn zoon in mijn wagen, en ik schrik me daar toch het apenlazarus zeg! Werkelijk heel de omgeving rond Centraal Station is open gebroken! Ik zweer het je, één grote bouwput...
+                    <a href=""> <img src="images/chevron_leesmeer.png" alt="lees meer icon">lees verder</a>
                 </p>
             </header>
             <footer>
                 <nav>
                     <ul>
-                        <li><a href="nichterig.html">Aantal keer opgeslagen</a></li>
-                        <li><a href="nichterig.html">Reacties</a></li>
+                        <li>
+                            <a href="nichterig.html"><img src="images/download_icon.svg" alt="aantal keer opgeslagen icon" /><span>32 keer opgeslagen</span></a>
+                        </li>
+                        <li>
+                            <a href="nichterig.html"><img src="images/comment_icon.svg" alt="aantal reacties icon" /><span>6 reacties</span></a>
+                        </li>
                     </ul>
                 </nav>
             </footer>

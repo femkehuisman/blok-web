@@ -29,11 +29,12 @@ body > header > nav > ul {
 }
 
 header > nav > ul > li {
-    margin: 1em 1em;
+    margin-left: 1em;
 }
 
 h1 {
-    padding-left: 1em;
+    font-size: 1.2em;
+    margin: 1.4em;
 }
 
 header ul {
@@ -41,19 +42,44 @@ header ul {
     list-style: none;
 }
 
-section {
+body > section > form {
+    background-color: rgba(34, 57, 116, 0.8);
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 0.8em;
+}
+
+body > section > form > select {
+    background-color: #ffffff;
+    border-radius: 0;
+    border-style: none;
+    font-size: 0.8em;
+    padding: 0.3em;
+    width: 70%;
+}
+
+select {
+    background-image: url(images/chevron.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+body > section {
     background-image: url(images/Losse-kaartjes-landing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin-top: 4.2em;
-    padding: 100px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 20%;
 }
 
 
 /* main */
 
 form {
-    /position: absolute;
     top: 300px;
 }
 
@@ -61,7 +87,10 @@ main {
     padding: 14px;
 }
 
-h2 {
+main > section > p {
+    flex-grow: 1;
+    font-size: 0.8em;
+    margin-top: 0;
     color: #223974;
 }
 
@@ -73,9 +102,91 @@ h3 {
     top: 100px;
 }
 
-img {
-    margin: -1.5em;
-    position: relative;
-    height: 400px;
+article {
+    background-color: #ffffff;
+    margin-top: 0.4em;
+}
+
+article img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 7em;
+}
+
+article h2 {
+    color: #223974;
+    margin-left: 0.7em;
+}
+
+article p {
+    margin: 1em;
+}
+
+article > header > p > a {
+    color: #2977BC;
+    display: block;
+    text-align: left;
+    padding-top: 0.5em;
+    text-decoration: none;
+}
+
+article > header > p > a > img {
+    width: 0.4em;
+    margin-right: 0.4em;
+}
+
+article > footer >nav >ul >li > a > img {
+    width: 1.5em;
+    padding-right: 0.5em;
+}
+
+article > footer > nav > ul > li {
+    list-style-type: none;
+    padding: 0;
+}
+
+article > footer > nav > ul {
+    margin: 1em 1em;
+    padding-bottom: 1em;
+    padding-left: 0;
+}
+
+article > footer > nav > ul > li > a {
+    text-decoration: none;
+}
+
+article > footer > nav > ul > li > a {
+    font-size: 0.6em;
+    color: #2977BC;
+    display: block;
+    text-align: left;
+    padding-top: 0.5em;
+    text-decoration: none;
+}
+
+article > footer > nav > ul > li > a > span {
+    position: absolute;
+}
+
+main > section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section > p {
+    margin: 0px;
+    vertical-align: middle;
+}
+
+main > section > form {
+    flex-grow: 1;
+}
+
+main > section > form > select {
+    background-color: #ffffff;
+    border-radius: 0;
+    border-style: none;
+    font-size: 0.8em;
+    padding: 0.3em;
     width: 100%;
 }
