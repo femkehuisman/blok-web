@@ -1,8 +1,8 @@
 body {
     background-color: #E5E5E8;
     font-family: NS Sans;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -16,9 +16,9 @@ body > header {
     height: 4.5em;
     justify-content: space-between;
     position: fixed;
-    z-index: 999;
-    width: 100%;
     top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 body > header > nav > ul {
@@ -44,9 +44,9 @@ header ul {
 
 body > section > form {
     background-color: rgba(34, 57, 116, 0.8);
-    padding-top: 0.5em;
     padding-bottom: 1em;
     padding-left: 0.8em;
+    padding-top: 0.5em;
 }
 
 body > section > form > select {
@@ -60,20 +60,17 @@ body > section > form > select {
 
 select {
     background-image: url(images/chevron.svg);
-    background-repeat: no-repeat;
     background-position: right;
+    background-repeat: no-repeat;
 }
 
 body > section {
     background-image: url(images/Losse-kaartjes-landing.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     margin-top: 4.2em;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    padding-right: 20%;
+    padding: 5% 20% 5% 5%;
 }
 
 
@@ -87,11 +84,12 @@ main {
     padding: 14px;
 }
 
-main > section > p {
+h4 {
+    color: #223974;
     flex-grow: 1;
     font-size: 0.8em;
-    margin-top: 0;
-    color: #223974;
+    font-weight: 100;
+    margin: 0em;
 }
 
 h3 {
@@ -108,12 +106,12 @@ article {
 }
 
 article img {
+    max-height: 7em;
     object-fit: cover;
     width: 100%;
-    max-height: 7em;
 }
 
-article h2 {
+h2 {
     color: #223974;
     margin-left: 0.7em;
 }
@@ -125,19 +123,19 @@ article p {
 article > header > p > a {
     color: #2977BC;
     display: block;
-    text-align: left;
     padding-top: 0.5em;
+    text-align: left;
     text-decoration: none;
 }
 
 article > header > p > a > img {
-    width: 0.4em;
     margin-right: 0.4em;
+    width: 0.4em;
 }
 
 article > footer >nav >ul >li > a > img {
-    width: 1.5em;
     padding-right: 0.5em;
+    width: 1.5em;
 }
 
 article > footer > nav > ul > li {
@@ -156,11 +154,11 @@ article > footer > nav > ul > li > a {
 }
 
 article > footer > nav > ul > li > a {
-    font-size: 0.6em;
     color: #2977BC;
     display: block;
-    text-align: left;
+    font-size: 0.6em;
     padding-top: 0.5em;
+    text-align: left;
     text-decoration: none;
 }
 
@@ -171,11 +169,6 @@ article > footer > nav > ul > li > a > span {
 main > section {
     display: flex;
     flex-wrap: wrap;
-}
-
-main > section > p {
-    margin: 0px;
-    vertical-align: middle;
 }
 
 main > section > form {
