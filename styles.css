@@ -244,26 +244,11 @@ main > section > form > select {
     main > section > article {
         margin: 0.2em;
     }
+    body > section >header> form {
+        padding-bottom: 2em;
+    }
     h4 {
         margin-bottom: 0.3em;
-    }
-    body > header > nav {
-        margin-right: 2em;
-    }
-    body > header > nav > ul > li > a > span {
-        color: #223974;
-        position: absolute;
-    }
-    body > header > nav > ul > li > a > img {
-        padding-right: 0.5em;
-        width: 1.5em;
-    }
-    body > header > nav > ul > li > a {
-        display: block;
-        padding-top: 0.5em;
-    }
-    a {
-        text-decoration: none;
     }
 }
 
