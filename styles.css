@@ -102,7 +102,7 @@ h3 {
 
 article {
     background-color: #ffffff;
-    margin-top: 0.4em;
+    margin-top: 1em;
     position: relative;
 }
 
@@ -224,6 +224,9 @@ main > section > form > select {
     section > nav {
         display: none;
     }
+    body > header > nav > ul > li > a > span {
+        display: none;
+    }
 }
 
 
@@ -235,10 +238,57 @@ main > section > form > select {
     }
     main > section:last-child {
         display: grid;
-        grid-template-columns: 48% 48%;
         grid-gap: 18px;
+        grid-template-columns: 49% 48.5%;
     }
     main > section > article {
         margin: 0.2em;
+    }
+    h4 {
+        margin-bottom: 0.3em;
+    }
+    body > header > nav {
+        margin-right: 2em;
+    }
+    body > header > nav > ul > li > a > span {
+        color: #223974;
+        position: absolute;
+    }
+    body > header > nav > ul > li > a > img {
+        padding-right: 0.5em;
+        width: 1.5em;
+    }
+    body > header > nav > ul > li > a {
+        display: block;
+        padding-top: 0.5em;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+
+/*Breakpoint 3*/
+
+@media screen and (min-width: 1024px) {
+    main > section > form {
+        display: none;
+    }
+    main > section:last-child {
+        display: grid;
+        grid-gap: 18px;
+        grid-template-columns: 32% 32% 32%;
+    }
+    main > section > article {
+        margin: 0.2em;
+    }
+    body > section >header> form {
+        padding-bottom: 4em;
+    }
+    body > section >header>form >select {
+        padding-bottom: 0.4em;
+        padding-top: 0.4em;
+        width: 60%;
+        font-size: 1em;
     }
 }
