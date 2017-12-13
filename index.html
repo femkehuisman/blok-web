@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>NS verhalenwebsite</title>
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -24,23 +24,30 @@
     </header>
 
     <section>
-        <form action="#">
-            <h3>Kies een categorie</h3>
-            <select name="Categoriën">
-                <option value="Alle verhalen">Alle verhalen</option>
-                <option value="Aparte schrijfstijl">Aparte schrijfstijl</option>
-                <option value="Humor">Humor</option>
-                <option value="Vrolijk">Vrolijk</option>
-                <option value="Personage">Personage</option>
-                <option value="Negatief">Negatief</option>
-                <option value="Gedicht">Gedicht</option>
-                <option value="Spannend">Spannend</option>
-            </select>
-        </form>
+        <header>
+            <form action="#">
+                <h3>Kies een categorie</h3>
+                <select name="Categoriën">
+                    <option value="Alle verhalen">Alle verhalen</option>
+                    <option value="Aparte schrijfstijl">Aparte schrijfstijl</option>
+                    <option value="Humor">Humor</option>
+                    <option value="Vrolijk">Vrolijk</option>
+                    <option value="Personage">Personage</option>
+                    <option value="Negatief">Negatief</option>
+                    <option value="Gedicht">Gedicht</option>
+                    <option value="Spannend">Spannend</option>
+                </select>
+            </form>
+        </header>
+
+        <nav>
+            <a href="#">Aanbevolen</a>
+            <a href="#">Populariteit</a>
+            <a href="#">Meest gelezen</a>
+        </nav>
     </section>
 
     <main>
-
         <section>
             <h4>100 verhalen in alle verhalen</h4>
             <form action="#">
@@ -52,72 +59,79 @@
             </form>
         </section>
 
-        <article>
-            <header>
-                <img src="images/kinderen_confetti.jpg" alt="kinderen met confetti">
-                <h2>Nichterig</h2>
-                <p>Dus ik stap de bus uit, met mijn zoon in mijn wagen, en ik schrik me daar toch het apenlazarus zeg! Werkelijk heel de omgeving rond Centraal Station is open gebroken! Ik zweer het je, één grote bouwput...
-                    <a href=""> <img src="images/chevron_leesmeer.png" alt="lees meer icon">lees verder</a>
-                </p>
-            </header>
-            <footer>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="nichterig.html"><img src="images/download_icon.svg" alt="aantal keer opgeslagen icon" /><span>32 keer opgeslagen</span></a>
-                        </li>
-                        <li>
-                            <a href="nichterig.html"><img src="images/comment_icon.svg" alt="aantal reacties icon" /><span>6 reacties</span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </footer>
-        </article>
+        <section>
 
-        <article>
-            <header>
-                <img src="images/irriteert_gezicht.jpg" alt="geirriteerde vrouw">
-                <h2>Gefrustreerd</h2>
-                <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen...
-                    <a href=""><img src="images/chevron_leesmeer.png" alt="lees meer icon">lees verder</a>
-            </header>
-            <footer>
-                <nav>
+            <article>
+                <img src="images/add_white.svg" alt="toevoegen aan lijst">
+                <header>
+                    <img src="images/kinderen_confetti.jpg" alt="kinderen met confetti">
+                    <h2>Nichterig</h2>
+                    <p>Dus ik stap de bus uit, met mijn zoon in mijn wagen, en ik schrik me daar toch het apenlazarus zeg! Werkelijk heel de omgeving rond Centraal Station is open gebroken! Ik zweer het je, één grote bouwput...
+                        <a href=""> <img src="images/chevron_leesmeer.png" alt="lees meer icon">lees verder</a>
+                    </p>
+                </header>
+                <footer>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="nichterig.html"><img src="images/download_icon.svg" alt="aantal keer opgeslagen icon" /><span>32 keer opgeslagen</span></a>
+                            </li>
+                            <li>
+                                <a href="nichterig.html"><img src="images/comment_icon.svg" alt="aantal reacties icon" /><span>6 reacties</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </footer>
+            </article>
 
-                    <ul>
-                        <li>
-                            <a href="gefrustreerd.html"><img src="images/download_icon.svg" alt="aantal keer opgeslagen icon" /><span>27 keer opgeslagen</span></a>
-                        </li>
-                        <li>
-                            <a href="gefrustreerd.html"><img src="images/comment_icon.svg" alt="aantal reacties icon" /><span>14 reacties</span></a>
-                        </li>
-                    </ul>
+            <article>
+                <img src="images/add_white.svg" alt="toevoegen aan lijst">
+                <header>
+                    <img src="images/irriteert_gezicht.jpg" alt="geirriteerde vrouw">
+                    <h2>Gefrustreerd</h2>
+                    <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen...
+                        <a href=""><img src="images/chevron_leesmeer.png" alt="lees meer icon">lees verder</a>
+                </header>
+                <footer>
+                    <nav>
 
-                </nav>
-            </footer>
-        </article>
+                        <ul>
+                            <li>
+                                <a href="gefrustreerd.html"><img src="images/download_icon.svg" alt="aantal keer opgeslagen icon" /><span>27 keer opgeslagen</span></a>
+                            </li>
+                            <li>
+                                <a href="gefrustreerd.html"><img src="images/comment_icon.svg" alt="aantal reacties icon" /><span>14 reacties</span></a>
+                            </li>
+                        </ul>
 
-        <article>
-            <header>
-                <img src="images/gezicht_man1.jpg" alt="man met angstige blik in zijn ogen">
-                <h2>Paranoïa</h2>
-                <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein...
-                    <a href=""><img src="images/chevron_leesmeer.png" alt="lees meer icon">lees verder</a>
-                </p>
-            </header>
-            <footer>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="paranoia.html"><img src="images/download_icon.svg" alt="aantal keer opgeslagen icon" /><span>12 keer opgeslagen</span></a>
-                        </li>
-                        <li>
-                            <a href="paranoia.html"><img src="images/comment_icon.svg" alt="aantal reacties icon" /><span>20 reacties</span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </footer>
-        </article>
+                    </nav>
+                </footer>
+            </article>
+
+            <article>
+                <img src="images/add_white.svg" alt="toevoegen aan lijst">
+                <header>
+                    <img src="images/gezicht_man1.jpg" alt="man met angstige blik in zijn ogen">
+                    <h2>Paranoïa</h2>
+                    <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein...
+                        <a href=""><img src="images/chevron_leesmeer.png" alt="lees meer icon">lees verder</a>
+                    </p>
+                </header>
+                <footer>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="paranoia.html"><img src="images/download_icon.svg" alt="aantal keer opgeslagen icon" /><span>12 keer opgeslagen</span></a>
+                            </li>
+                            <li>
+                                <a href="paranoia.html"><img src="images/comment_icon.svg" alt="aantal reacties icon" /><span>20 reacties</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </footer>
+            </article>
+
+        </section>
 
     </main>
 
