@@ -248,7 +248,7 @@ main > section > form > select {
 
 /*Breakpoint 1*/
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 36.250em) {
     section > nav {
         display: none;
     }
@@ -260,7 +260,7 @@ main > section > form > select {
 
 /*Breakpoint 2*/
 
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 36.250em) {
     main > section > form {
         display: none;
     }
@@ -283,7 +283,7 @@ main > section > form > select {
 
 /*Breakpoint 3*/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64.000em) {
     main > section > form {
         display: none;
     }
