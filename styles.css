@@ -34,6 +34,21 @@ body > header > nav > ul {
 
 header > nav > ul > li {
     margin-left: 1em;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+}
+
+header > nav > ul > li > a {
+    color: transparent;
+}
+
+header > nav > ul> li:first-child {
+    background-image: url(images/search.svg);
+}
+
+header > nav > ul > li:last-child {
+    background-image: url(images/profiel.svg);
 }
 
 h1 {
