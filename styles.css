@@ -40,7 +40,9 @@ header > nav > ul > li {
 }
 
 header > nav > ul > li > a {
-    color: transparent;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 header > nav > ul> li:first-child {
@@ -202,24 +204,31 @@ main > section {
     flex-wrap: wrap;
 }
 
-section > nav {
-    background-color: #F8C333;
+section > nav > ul {
+    margin: 0;
+    padding: 1em 0em;
+    list-style: none;
     display: flex;
+    background-color: #F8C333;
     flex-wrap: nowrap;
     width: 100%;
 }
 
-section > nav > a {
-    color: #223974;
+section > nav > ul > li {
     flex-grow: 1;
+}
+
+section > nav > ul > li > a {
+    color: #223974;
+    display: block;
     font-weight: bold;
-    padding: 1em;
+    width: 100%;
     text-align: center;
     text-decoration: none;
 }
 
-section > nav > a:active,
-section > nav > a:hover {
+section > nav > ul > li > a:active,
+section > nav > ul > li > a:hover {
     text-decoration: underline;
 }
 
