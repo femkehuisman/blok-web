@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+fieldset {
+    border: none;
+}
+
 
 /* header */
 
@@ -30,6 +34,23 @@ body > header > nav > ul {
 
 header > nav > ul > li {
     margin-left: 1em;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header > nav > ul> li:first-child {
+    background-image: url(images/search.svg);
+}
+
+header > nav > ul > li:last-child {
+    background-image: url(images/profiel.svg);
 }
 
 h1 {
@@ -47,16 +68,23 @@ body > section >header> form {
     background-color: rgba(34, 57, 116, 0.8);
     padding-bottom: 1em;
     padding-left: 0.8em;
-    padding-top: 0.5em;
+    padding-top: 1em;
 }
 
-body > section >header> form > select {
+body > section >header> form > fieldset > select {
     background-color: #ffffff;
     border-radius: 0;
     border-style: none;
     font-size: 0.8em;
     padding: 0.3em;
     width: 70%;
+}
+
+body > section > header > form > fieldset > legend {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1em;
 }
 
 select {
@@ -93,20 +121,13 @@ h4 {
     margin: 0.8em 0 0 0;
 }
 
-h3 {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    font-weight: 500;
-    top: 6.25em;
-}
-
 article {
     background-color: #ffffff;
     margin-top: 1em;
     position: relative;
 }
 
-article > img {
+article > header > img:first-child {
     background-color: #F8C333;
     background-color: rgba(248, 195, 51, 0.8);
     height: 2em;
@@ -116,7 +137,7 @@ article > img {
     width: 2em;
 }
 
-article > header > img {
+article > header > img:nth-child(2) {
     max-height: 7em;
     object-fit: cover;
     width: 100%;
@@ -132,7 +153,7 @@ article p {
     margin: 1em;
 }
 
-article > header > p > a {
+article > p > a {
     color: #2977BC;
     display: block;
     padding-top: 0.5em;
@@ -140,7 +161,7 @@ article > header > p > a {
     text-decoration: none;
 }
 
-article > header > p > a > img {
+article > p > a > img {
     margin-right: 0.4em;
     width: 0.4em;
 }
@@ -183,24 +204,31 @@ main > section {
     flex-wrap: wrap;
 }
 
-section > nav {
-    background-color: #F8C333;
+section > nav > ul {
+    margin: 0;
+    padding: 1em 0em;
+    list-style: none;
     display: flex;
+    background-color: #F8C333;
     flex-wrap: nowrap;
     width: 100%;
 }
 
-section > nav > a {
-    color: #223974;
+section > nav > ul > li {
     flex-grow: 1;
+}
+
+section > nav > ul > li > a {
+    color: #223974;
+    display: block;
     font-weight: bold;
-    padding: 1em;
+    width: 100%;
     text-align: center;
     text-decoration: none;
 }
 
-section > nav > a:active,
-section > nav > a:hover {
+section > nav > ul > li > a:active,
+section > nav > ul > li > a:hover {
     text-decoration: underline;
 }
 
@@ -262,7 +290,7 @@ main > section > form > select {
     main > section:last-child {
         display: grid;
         grid-gap: 18px;
-        grid-template-columns: 32.5% 32.5% 32.5%;
+        grid-template-columns: 32.5% 32.5% 31.5%;
     }
     main > section > article {
         margin: 0.2em;
@@ -271,9 +299,9 @@ main > section > form > select {
         padding-bottom: 4em;
     }
     body > section >header>form >select {
+        font-size: 1em;
         padding-bottom: 0.4em;
         padding-top: 0.4em;
         width: 60%;
-        font-size: 1em;
     }
 }
