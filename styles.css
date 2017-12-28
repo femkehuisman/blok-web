@@ -67,6 +67,13 @@ header>nav>ul>li:first-child {
 }
 header>nav>ul>li:last-child {
     width: 2em;
+    position: relative;
+    background-image: url(images/profiel.svg);
+}
+header>nav>ul>li:last-child>span {
+    top: 0%;
+    right: 0%;
+    position: absolute;
     background-image: url(images/profiel.svg);
 }
 h1 {
