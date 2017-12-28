@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="nl">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <link rel="stylesheet" href="styles_login.css">
-</head>
-
-<body>
-    <header>
-        <h1>MijnNS</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href=""><img src="images/search.svg" alt="zoek icon" /><span></span></a>
-                </li>
-                <li>
-                    <a href="login.html"><img src="images/profiel.svg" alt="profiel" /><span></span></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <form action="#">
-
-            <h2>Inloggen</h2> E-mailadres:
-            <input type="email"> Wachtwoord:
-            <input type="password">
-
-            <input type="submit" value="Inloggen">
-        </form>
-
-        <a href="account.html">Account aanmaken</a>
-    </main>
-</body>
-
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Login
+            </title>
+            <meta content="initial-scale=1.0" name="viewport">
+                <link href="styles_login.css" rel="stylesheet">
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <header>
+            <img alt="logo van ns" src="images/nslogo.svg"/>
+        </header>
+        <main>
+            <h1>
+                Welkom bij MijnNS
+            </h1>
+            <form action="#">
+                <fieldset>
+                    <legend>
+                        Inloggen
+                    </legend>
+                    <label for="mail">
+                        E-mailadres:
+                    </label>
+                    <input required="" type="text">
+                        <label for="Password">
+                            Wachtwoord:
+                        </label>
+                        <input required="" type="password">
+                        </input>
+                    </input>
+                </fieldset>
+                <button>
+                    Inloggen
+                </button>
+            </form>
+            <section>
+                <h2>
+                    MijnNS account aanmaken
+                </h2>
+                <ul>
+                    <li>
+                        Verhalen opslaan in een lijst
+                    </li>
+                    <li>
+                        Reacties achterlaten op verhalen
+                    </li>
+                    <li>
+                        Leeslijsten aanmaken naar jouw smaak
+                    </li>
+                </ul>
+                <a href="account.html">
+                    Account aanmaken
+                </a>
+            </section>
+        </main>
+    </body>
 </html>
