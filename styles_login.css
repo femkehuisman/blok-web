@@ -4,11 +4,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* header */
 
-header>img {
+header > img {
     margin: 1.4em;
 }
+
 /*main*/
 
 main {
@@ -17,61 +19,139 @@ main {
     padding: 1em;
     padding-bottom: 3em;
 }
-main>h1 {
+
+h1 {
     color: #223974;
     font-weight: normal;
 }
-main>form {
+
+main > section > form {
     background-color: #F8C333;
+    flex-grow: 1;
     padding: 1em;
 }
+
 fieldset {
     border-style: none;
-    padding: 0;
     margin-left: 1em;
     margin-right: 1em;
+    padding: 0;
+
 }
-main>form>fieldset>input {
+
+main > section > form > fieldset > section > input {
+    flex-grow: 1;
     margin-bottom: 0.9em;
     margin-top: 0.9em;
     padding-bottom: 2em;
-    width: 100%;
+
 }
+
+main > section > form > fieldset > section {
+    display: flex;
+    flex-direction: column;
+}
+
 legend {
-    margin-top: 5em;
-    margin-bottom: 1em;
     color: #223974;
     font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 5em;
 }
-main>form>button {
-    color: white;
-    border-radius: 0;
-    font-size: 0.9em;
-    text-align: left;
-    padding: 0.8em;
-    background-color: #2977BC;
-    width: 10em;
-    margin-left: 1em;
-}
-main>section>ul>li {
-    list-style: none;
-    background-image: url(images/vinkje.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 2.5em;
-    margin-bottom: 0.8em;
-}
-main>section>a {
-    color: #2977BC;
-    margin-left: 1em;
+
+label {
     display: flex;
+    margin-bottom: auto;
+    margin-right: 1em;
+    margin-top: auto;
+
+}
+
+main > section > form > button {
+    background-color: #2977BC;
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-size: 0.9em;
+    margin-left: 1em;
+    padding: 0.8em;
+    text-align: left;
+    width: 10em;
+
+}
+
+main > section > section > ul > li {
+    background-image: url(images/vinkje.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    list-style: none;
+    margin-bottom: 0.8em;
+    padding-left: 2.5em;
+
+}
+
+main > section > section > a {
+    color: #2977BC;
+    display: flex;
+    margin-left: 1em;
     margin-top: 1em;
 }
-main>section>ul {
+
+main > section > section {
+    flex-grow: 1;
+}
+
+main > section > section > ul {
     padding: 0;
 }
+
 h2 {
     color: #223974;
     font-size: 1em;
     font-weight: normal;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Breakpoint 1*/
+
+@media screen and (min-width: 36.250em) {
+
+    main > section > form > fieldset > section {
+        flex-direction: row;
+    }
+    main > section > form > fieldset > section > label {
+        width: 6em;
+    }
+    main > section > form > button {
+        margin-left: 8.9em;
+    }
+}
+
+/*Breakpoint 2*/
+
+@media screen and (min-width: 64.000em) {
+
+    body {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding-bottom: 5em;
+    }
+
+    main > section > form {
+        padding: 3em 1em;
+    }
+
+
+    main > section:last-child {
+        flex-direction: row;
+    }
+    main > section > section {
+        margin-left: 3em;
+    }
 }

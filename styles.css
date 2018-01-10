@@ -4,12 +4,14 @@ body {
     margin: 0;
     padding: 0;
 }
+
 fieldset {
     border: none;
 }
+
 /* header */
 
-body>header {
+body > header {
     background-color: #FFFFFF;
     box-shadow: 0.3em 0.06em 0.3em grey;
     color: #223974;
@@ -21,77 +23,102 @@ body>header {
     width: 100%;
     z-index: 999;
 }
-body>header>nav>ul {
+
+body > header > nav > ul {
     display: flex;
     justify-content: space-between;
-    margin: 1em 1em 1em 0em;
+    list-style: none;
+    margin: 1em 1em 1em;
     padding: 0.3em;
 }
-body>header>nav>ul>li>a {
+
+body > header > nav > ul > li > a {
     display: block;
-    width: 100%;
     height: 100%;
+    width: 100%;
+
 }
-header>nav>ul>li {
-    margin-left: 1em;
-    height: 2em;
+
+header > nav > ul > li {
+
     background-repeat: no-repeat;
+    height: 2em;
+    margin-left: 1em;
+
 }
-header>nav>ul>li>form {
-    width: 100%;
-    height: 100%;
+
+header > nav > ul > li > form {
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: center;
+    width: 100%;
 }
-header>nav>ul>li>form>input {
-    margin-top: auto;
-    margin-bottom: auto;
+
+header > nav > ul > li > form > input {
     align-self: flex-end;
-    width: 0;
-    visibility: hidden;
+    outline: none;
+    color: #223974;
+    font-size: 0.1em;
     height: 0;
-    font-size: 0;
+    margin-bottom: auto;
+    margin-top: auto;
     transition: width 0.4s, height 0.8s, font-size 0.4s;
+    visibility: hidden;
+    width: 0;
 }
+
 .searchExpanded {
+    font-size: 1em;
+    height: 100%;
     visibility: visible;
     width: 100%;
-    height: 100%;
-    font-size: 1em;
 }
-header>nav>ul>li:first-child {
-    width: 6em;
+
+.counterHidden {
+    visibility: hidden;
+}
+
+header > nav > ul > li:first-child {
     background-image: url(images/search.svg);
     background-position: right;
+    width: 6em;
+
 }
-header>nav>ul>li:last-child {
-    width: 2em;
-    position: relative;
+
+header > nav > ul > li:last-child {
     background-image: url(images/profiel.svg);
+    position: relative;
+    width: 2em;
 }
-header>nav>ul>li:last-child>span {
+
+header > nav > ul > li:last-child > span {
+    background-image: url(images/profiel.svg);
+    position: absolute;
+    color: #223974;
     top: 0%;
     right: 0%;
-    position: absolute;
-    background-image: url(images/profiel.svg);
 }
+
 h1 {
     font-size: 1.2em;
     margin: 1.4em 0 1.4em 1.4em;
 }
+
 header ul {
     display: flex;
     list-style: none;
 }
-body>section>header>form {
+
+body > section > header > form {
     background-color: #223974;
     background-color: rgba(34, 57, 116, 0.8);
     padding-bottom: 1em;
     padding-left: 0.8em;
     padding-top: 1em;
 }
-body>section>header>form>fieldset>select {
+
+body > section > header > form > fieldset > select {
     background-color: #ffffff;
     border-radius: 0;
     border-style: none;
@@ -99,33 +126,40 @@ body>section>header>form>fieldset>select {
     padding: 0.3em;
     width: 70%;
 }
-body>section>header>form>fieldset>legend {
+
+body > section > header > form > fieldset > legend {
     color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1em;
 }
+
 select {
     background-image: url(images/chevron.svg);
     background-position: right;
     background-repeat: no-repeat;
+    -webkit-appearance: none;
 }
-body>section>header {
-    background-image: url(images/Losse-kaartjes-landing.jpg);
+
+body > section > header {
+    background-image: url(images/thema_studenten.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 4.2em;
     padding: 5% 20% 5% 5%;
 }
+
 /* main */
 
 form {
     top: 18.75em;
 }
+
 main {
     padding: 0.8em;
 }
+
 h4 {
     color: #223974;
     flex-grow: 1;
@@ -133,12 +167,14 @@ h4 {
     font-weight: 100;
     margin: 0.8em 0 0 0;
 }
+
 article {
     background-color: #ffffff;
     margin-top: 1em;
     position: relative;
 }
-article>header>img:first-child {
+
+article > header > img:first-child {
     background-color: #F8C333;
     background-color: rgba(248, 195, 51, 0.8);
     height: 2em;
@@ -147,47 +183,57 @@ article>header>img:first-child {
     top: 0;
     width: 2em;
 }
-article>header>img:nth-child(2) {
+
+article > header > img:nth-child(2) {
     max-height: 7em;
     object-fit: cover;
     width: 100%;
 }
+
 h2 {
     color: #223974;
     margin-bottom: -0.2em;
     margin-left: 0.7em;
 }
+
 article p {
     margin: 1em;
 }
-article>p>a {
+
+article > p > a {
     color: #2977BC;
     display: block;
     padding-top: 0.5em;
     text-align: left;
     text-decoration: none;
 }
-article>p>a>img {
+
+article > p > a > img {
     margin-right: 0.4em;
     width: 0.4em;
 }
-article>footer>nav>ul>li>a>img {
+
+article > footer > nav > ul > li > a > img {
     padding-right: 0.5em;
     width: 1.5em;
 }
-article>footer>nav>ul>li {
+
+article > footer > nav > ul > li {
     list-style-type: none;
     padding: 0;
 }
-article>footer>nav>ul {
+
+article > footer > nav > ul {
     margin: 1em 1em;
     padding-bottom: 1em;
     padding-left: 0;
 }
-article>footer>nav>ul>li>a {
+
+article > footer > nav > ul > li > a {
     text-decoration: none;
 }
-article>footer>nav>ul>li>a {
+
+article > footer > nav > ul > li > a {
     color: #2977BC;
     display: block;
     font-size: 0.6em;
@@ -195,40 +241,48 @@ article>footer>nav>ul>li>a {
     text-align: left;
     text-decoration: none;
 }
-article>footer>nav>ul>li>a>span {
+
+article > footer > nav > ul > li > a > span {
     position: absolute;
 }
-main>section {
+
+main > section {
     display: flex;
     flex-wrap: wrap;
 }
-section>nav>ul {
-    margin: 0;
-    padding: 1em 0em;
-    list-style: none;
-    display: flex;
+
+section > nav > ul {
     background-color: #F8C333;
+    display: flex;
     flex-wrap: nowrap;
-    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 1em;
 }
-section>nav>ul>li {
+
+section > nav > ul > li {
     flex-grow: 1;
 }
-section>nav>ul>li>a {
+
+section > nav > ul > li > a {
     color: #223974;
     display: block;
     font-weight: bold;
-    width: 100%;
     text-align: center;
     text-decoration: none;
+    width: 100%;
 }
-section>nav>ul>li>a:active, section>nav>ul>li>a:hover {
+
+section > nav > ul > li > a:active,
+section > nav > ul > li > a:hover {
     text-decoration: underline;
 }
-main>section>form {
+
+main > section > form {
     flex-grow: 1;
 }
-main>section>form>select {
+
+main > section > form > select {
     background-color: #ffffff;
     border-radius: 0;
     border-style: none;
@@ -236,55 +290,58 @@ main>section>form>select {
     padding: 0.3em;
     width: 100%;
 }
+
 /*Breakpoint 1*/
 
 @media screen and (max-width: 36.250em) {
-    section>nav {
+    section > nav {
         display: none;
     }
-    body>header>nav>ul>li>a>span {
+    body > header > nav > ul > li > a > span {
         display: none;
     }
 }
+
 /*Breakpoint 2*/
 
 @media screen and (min-width: 36.250em) {
-    main>section>form {
+    main > section > form {
         display: none;
     }
-    main>section:last-child {
+    main > section:last-child {
         display: grid;
         grid-gap: 18px;
         grid-template-columns: 49% 48.5%;
     }
-    main>section>article {
+    main > section > article {
         margin: 0.2em;
     }
-    body>section>header>form {
+    body > section > header > form {
         padding-bottom: 2em;
     }
     h4 {
         margin-bottom: 0.3em;
     }
 }
+
 /*Breakpoint 3*/
 
 @media screen and (min-width: 64.000em) {
-    main>section>form {
+    main > section > form {
         display: none;
     }
-    main>section:last-child {
+    main > section:last-child {
         display: grid;
         grid-gap: 18px;
         grid-template-columns: 32.5% 32.5% 31.5%;
     }
-    main>section>article {
+    main > section > article {
         margin: 0.2em;
     }
-    body>section>header>form {
+    body > section > header > form {
         padding-bottom: 4em;
     }
-    body>section>header>form>select {
+    body > section > header > form > select {
         font-size: 1em;
         padding-bottom: 0.4em;
         padding-top: 0.4em;
