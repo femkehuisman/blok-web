@@ -76,6 +76,15 @@ button {
     width: 10em;
 }
 
+div {
+    position: fixed;
+    top: 1em;
+    z-index: 950;
+    margin-top: 50px;
+    height: 20px;
+    background: green;
+    width: 0%;
+}
 
 /*Breakpoint 1*/
 

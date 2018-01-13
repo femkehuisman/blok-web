@@ -1,0 +1,15 @@
+.progressIndicator {
+    height: 1em;
+    background: green;
+    animation: progressAnimatie 5s;
+
+}
+
+@keyframes progressAnimatie {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

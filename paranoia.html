@@ -8,6 +8,7 @@
     </title>
     <meta content="initial-scale=1.0" name="viewport" />
     <link href="paranoia.css" rel="stylesheet" />
+    <link href="confetti.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -39,6 +40,7 @@
         <img src="images/mobiel_para.jpg" alt="verhaal paranoia">
 
         <form action="#">
+            <canvas id="confetti"></canvas>
             <fieldset>
                 <legend>
                     Reactie
@@ -47,13 +49,13 @@
                     <textarea name="message"></textarea>
                 </section>
             </fieldset>
-            <button>
+            <button class="submitComment">
                     Reactie plaatsen
             </button>
         </form>
 
     </main>
-    <script src="script.js"></script>
+    <script src="confetti.js"></script>
 </body>
 
 </html>

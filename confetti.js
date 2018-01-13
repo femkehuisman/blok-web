@@ -1,17 +1,17 @@
 var confetti;
 
-window.onload = function () {
+window.addEventListener("load", function () {
     document.querySelector(".submitComment").addEventListener("click",
-        function () {
+        function (event) {
+            event.preventDefault();
+            console.log("dingetje");
             confetti.start();
         });
-}
+})
 
 
 
-
-
-// Alles vanaf hier https://www.iprodev.com/confetti-animation-javascript/
+// Alles vanaf hier bron: https://www.iprodev.com/confetti-animation-javascript/
 var retina = window.devicePixelRatio,
 
     // Math shorthands
