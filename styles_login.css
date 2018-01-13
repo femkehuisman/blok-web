@@ -43,7 +43,8 @@ main > section > form > fieldset > section > input {
     flex-grow: 1;
     margin-bottom: 0.9em;
     margin-top: 0.9em;
-    padding-bottom: 2em;
+    line-height: 2.5em;
+    outline: none;
 
 }
 
