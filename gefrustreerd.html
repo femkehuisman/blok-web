@@ -8,10 +8,13 @@
     </title>
     <meta content="initial-scale=1.0" name="viewport" />
     <link href="gefrustreerd.css" rel="stylesheet" />
+    <link href="confetti.css" rel="stylesheet" />
 </head>
 
 <body>
+
     <header>
+
         <h1>
             Gefrustreerd
         </h1>
@@ -39,6 +42,8 @@
         <img src="images/mobiel_gefrustreerd.jpg" alt="verhaal gefrustreerd">
 
         <form action="#">
+            <canvas id="confetti"></canvas>
+
             <fieldset>
                 <legend>
                     Reactie
@@ -47,12 +52,15 @@
                     <textarea name="message"></textarea>
                 </section>
             </fieldset>
-            <button>
+            <button class="submitComment">
                     Reactie plaatsen
             </button>
         </form>
 
+
     </main>
+    <script src="script.js"></script>
+    <script src="confetti.js"></script>
 </body>
 
 </html>
