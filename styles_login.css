@@ -7,9 +7,10 @@ body {
 
 /* header */
 
-header > img {
+header {
     margin: 1.4em;
 }
+
 
 /*main*/
 
@@ -78,7 +79,14 @@ main > section > form > button {
     padding: 0.8em;
     text-align: left;
     width: 10em;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
 
+}
+
+main > section > form > button:hover {
+    background-color: #223974;
+    background-color: rgb(34, 57, 116)
 }
 
 main > section > section > ul > li {

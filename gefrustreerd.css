@@ -30,6 +30,11 @@ body > header > nav > ul {
     padding: 0.3em;
 }
 
+header > a {
+    color: #223974;
+    text-decoration: none;
+}
+
 header > nav > ul > li {
     margin-left: 1em;
 }
@@ -72,9 +77,18 @@ button {
     color: white;
     font-size: 0.9em;
     margin-left: 1em;
+    margin-bottom: 2em;
     padding: 0.8em;
     text-align: left;
     width: 10em;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+
+}
+
+button:hover {
+    background-color: #223974;
+    background-color: rgb(34, 57, 116)
 }
 
 div {
@@ -83,7 +97,8 @@ div {
     z-index: 950;
     margin-top: 50px;
     height: 20px;
-    background: green;
+    background-color: #2977BC;
+    background-color: rgba(41, 119, 188, 0.8);
     width: 0%;
 }
 

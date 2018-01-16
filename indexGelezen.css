@@ -1,6 +1,7 @@
 .progressIndicator {
     height: 1em;
-    background: green;
+    background-color: #2977BC;
+    background-color: rgba(41, 119, 188, 0.8);
     animation: progressAnimatie 5s;
 
 }

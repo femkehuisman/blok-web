@@ -63,7 +63,7 @@ header > nav > ul > li > form > input {
     height: 0;
     margin-bottom: auto;
     margin-top: auto;
-    transition: width 0.4s, height 0.8s, font-size 0.4s;
+    transition: width 0.8s, height 0.8s, font-size 0.4s;
     visibility: hidden;
     width: 0;
 }
@@ -84,6 +84,16 @@ header > nav > ul > li:first-child {
     background-position: right;
     width: 6em;
 
+}
+
+.addButton {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.addButton:hover {
+    background-color: #E5B430;
+    background-color: rgba(229, 180, 48, 0.8);
 }
 
 header > nav > ul > li:last-child {
