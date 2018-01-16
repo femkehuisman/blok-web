@@ -1,15 +1,27 @@
 /*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
 
-var searchInput = false;
-var searchItem;
-var searchInputVisible;
-var addButtons;
-var itemsCounter;
 var addImageSrc = "images/add_white.svg";
 var deleteImageSrc = "images/remove_white.png";
 var addAlt = "Toevoegen aan lijst";
 var deleteAlt = "Verwijderen van lijst";
 var addedCount = 0;
+
+var searchInput = document.querySelector(".searchInput");
+var searchItem = document.querySelector(".searchItem");
+
+var addButtons = document.getElementsByClassName("addButton");
+var itemsCounter = document.getElementById("itemsCounter");
+
+searchItem.addEventListener("click", showSearch); //als er op SearchItem (zoekicoon) wordt geklikt wordt showSearch uitgevoerd
+searchInput.addEventListener("focusout", hideSearch); // als de focus niet meer op het zoekveld is, wordt de functie hideSearch uitgevoerd
+
+window.onload = function () {
+    for (var i = 0; i < addButtons.length; i++) { //
+        addButtons[i].addEventListener("click", function () {
+            onAddClick(this); //Geef het button html element mee aan functie
+        });
+    }
+}
 
 function showSearch() {
     searchInput.classList.add('searchExpanded');
@@ -37,28 +49,9 @@ function onAddClick(button) {
 
 function updateCounterElement() {
     if (addedCount === 0) {
-        itemsCounter.classList.add('counterHidden') //Verstoppen wanneer count 0 is
+        itemsCounter.classList.remove('counterShown'); //Verstoppen wanneer count 0 is
     } else {
-        itemsCounter.classList.remove('counterHidden');
+        itemsCounter.classList.add('counterShown');
         itemsCounter.innerText = addedCount; //added count als text zetten
-    }
-}
-
-function setup() {
-    searchInput = document.querySelector(".searchInput");
-    searchItem = document.querySelector(".searchItem");
-    addButtons = document.getElementsByClassName("addButton"); //array van elementen met de class addButton
-    itemsCounter = document.getElementById("itemsCounter");
-}
-
-window.onload = function () {
-    setup();
-    searchItem.addEventListener("click", showSearch); //als er op SearchItem (zoekicoon) wordt geklikt wordt showSearch uitgevoerd
-    searchInput.addEventListener("focusout", hideSearch); // als de focus niet meer op het zoekveld is, wordt de functie hideSearch uitgevoerd
-    for (var i = 0; i < addButtons.length; i++) { //
-        var button = addButtons[i]
-        button.addEventListener("click", function () {
-            onAddClick(this);
-        });
     }
 }

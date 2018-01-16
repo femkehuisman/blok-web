@@ -1,12 +1,10 @@
-var confetti;
+var confetti; //Opslaan van confetti var uit bron code
 
-window.addEventListener("load", function () {
-    document.querySelector(".submitComment").addEventListener("click",
-        function (event) {
-            event.preventDefault();
-            confetti.start();
-        });
-})
+document.querySelector(".submitComment").addEventListener("click",
+    function (event) {
+        event.preventDefault();
+        confetti.start();
+    });
 
 
 
