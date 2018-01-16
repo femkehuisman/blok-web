@@ -26,6 +26,7 @@ body > header > nav > ul {
     display: flex;
     justify-content: space-between;
     margin: 1em 1em;
+    margin-left: -1em;
     padding: 0.3em;
 }
 
@@ -74,6 +75,16 @@ button {
     padding: 0.8em;
     text-align: left;
     width: 10em;
+}
+
+div {
+    position: fixed;
+    top: 1em;
+    z-index: 950;
+    margin-top: 50px;
+    height: 20px;
+    background: green;
+    width: 0%;
 }
 
 /*Breakpoint 1*/
