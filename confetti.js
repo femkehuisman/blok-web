@@ -4,7 +4,6 @@ window.addEventListener("load", function () {
     document.querySelector(".submitComment").addEventListener("click",
         function (event) {
             event.preventDefault();
-            console.log("dingetje");
             confetti.start();
         });
 })

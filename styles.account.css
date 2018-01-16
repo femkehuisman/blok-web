@@ -1,0 +1,170 @@
+body {
+    background-color: #E5E5E8;
+    font-family: NS Sans;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header > img {
+    margin: 1.4em;
+}
+
+/*main*/
+
+main {
+    background-color: white;
+    margin: 0.5em;
+    padding: 1em;
+    padding-bottom: 3em;
+    padding-left: 2em;
+}
+
+h1 {
+    color: #223974;
+    font-weight: normal;
+}
+
+main > section > form {
+    flex-grow: 1;
+}
+
+fieldset {
+    border-style: none;
+    padding: 0;
+    margin-top: 3em
+}
+
+main > section > form > fieldset > section > input {
+    flex-grow: 1;
+    margin-bottom: 0.9em;
+    margin-top: 0.9em;
+    line-height: 2.5em;
+    outline: none;
+
+}
+
+main > section > form > fieldset > section {
+    display: flex;
+    flex-direction: column;
+}
+
+main > section > form > fieldset > section > input {
+    margin-bottom: 0.9em;
+    margin-top: 0.9em;
+    padding-bottom: 2em;
+    display: flex;
+    border: 0.0625em solid #b5b5bc;
+    line-height: 1.56em;
+    outline: none;
+}
+
+legend {
+    color: #223974;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 5em;
+}
+
+label {
+    display: flex;
+    margin-bottom: auto;
+    margin-right: 1em;
+    margin-top: auto;
+
+}
+
+main > section > form > button {
+    background-color: #2977BC;
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-size: 0.9em;
+    margin-left: 1em;
+    padding: 0.8em;
+    text-align: left;
+    width: 10em;
+
+}
+
+main > section > section > ul > li {
+    background-image: url(images/vinkje.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    list-style: none;
+    margin-bottom: 0.8em;
+    padding-left: 2.5em;
+
+}
+
+main > section > section {
+    flex-grow: 1;
+    margin-top: 1em;
+}
+
+main > section > section > ul {
+    padding: 0;
+}
+
+h2 {
+    color: #223974;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+}
+
+main > p {
+    padding-left: 0.2em;
+}
+
+/*Breakpoint 1*/
+
+@media screen and (min-width: 36.250em) {
+
+    main {
+        margin: 1.5em;
+    }
+
+    main > section > form > fieldset > section {
+        flex-direction: row;
+    }
+    main > section > form > fieldset > section > label {
+        width: 6em;
+    }
+    main > section > form > button {
+        margin-left: 8em;
+    }
+}
+
+/*Breakpoint 2*/
+
+@media screen and (min-width: 64.000em) {
+
+    body {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding-bottom: 5em;
+        margin: 0em 1.5em;
+    }
+
+    main > section > form {
+        padding: 3em 1em;
+        padding-top: 0em;
+    }
+
+
+    main > section:last-child {
+        flex-direction: row;
+    }
+    main > section > section {
+        margin-left: 3em;
+        margin-top: 2.5em;
+    }
+}
