@@ -5,9 +5,6 @@ body {
     padding: 0;
 }
 
-fieldset {
-    border: none;
-}
 
 /* header */
 
@@ -24,7 +21,7 @@ body > header {
     z-index: 999;
 }
 
-header > a {
+body > header > a {
     color: #223974;
     text-decoration: none;
 }
@@ -37,14 +34,7 @@ body > header > nav > ul {
     padding: 0.3em;
 }
 
-body > header > nav > ul > li > a {
-    display: block;
-    height: 100%;
-    width: 100%;
-
-}
-
-header > nav > ul > li {
+body > header > nav > ul > li {
 
     background-repeat: no-repeat;
     height: 2em;
@@ -52,7 +42,15 @@ header > nav > ul > li {
 
 }
 
-header > nav > ul > li > form {
+body > header > nav > ul > li > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+body > header > nav > ul > li > form {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -60,32 +58,46 @@ header > nav > ul > li > form {
     width: 100%;
 }
 
-header > nav > ul > li > form > input {
-    align-self: flex-end;
-    outline: none;
-    color: #223974;
-    font-size: 0.1em;
-    height: 0;
-    margin-bottom: auto;
-    margin-top: auto;
-    transition: width 0.8s, height 0.8s, font-size 0.4s;
-    visibility: hidden;
-    width: 0;
+body > section > header {
+    background-image: url(images/thema_studenten.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4.2em;
+    padding: 5% 20% 5% 5%;
 }
 
-.searchExpanded {
-    font-size: 1em;
-    height: 100%;
-    visibility: visible;
-    width: 100%;
+body > section > header > form {
+    background-color: #223974;
+    background-color: rgba(34, 57, 116, 0.8);
+    padding-bottom: 1em;
+    padding-left: 0.8em;
+    padding-top: 1em;
 }
 
-header > nav > ul > li:first-child {
-    background-image: url(images/search.svg);
+body > section > header > form > fieldset > select {
+    background-color: #ffffff;
+    border-radius: 0;
+    border-style: none;
+    font-size: 0.8em;
+    padding: 0.3em;
+    width: 70%;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+select {
+    background-image: url(images/chevron.svg);
     background-position: right;
-    width: 6em;
-
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
 }
+
 
 .addButton {
     -webkit-transition-duration: 0.4s;
@@ -127,55 +139,48 @@ header ul {
     list-style: none;
 }
 
-body > section > header > form {
-    background-color: #223974;
-    background-color: rgba(34, 57, 116, 0.8);
-    padding-bottom: 1em;
-    padding-left: 0.8em;
-    padding-top: 1em;
+
+/* header > zoekbalk */
+
+body > header > nav > ul > li > form > input {
+    align-self: flex-end;
+    outline: none;
+    color: #223974;
+    font-size: 0.1em;
+    height: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    transition: width 0.8s, height 0.8s, font-size 0.4s;
+    visibility: hidden;
+    width: 0;
 }
 
-body > section > header > form > fieldset > select {
-    background-color: #ffffff;
-    border-radius: 0;
-    border-style: none;
-    font-size: 0.8em;
-    padding: 0.3em;
-    width: 70%;
+.searchExpanded {
+    font-size: 1em;
+    height: 100%;
+    visibility: visible;
+    width: 100%;
 }
 
-body > section > header > form > fieldset > legend > h3 {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1em;
-}
-
-select {
-    background-image: url(images/chevron.svg);
+header > nav > ul > li:first-child {
+    background-image: url(images/search.svg);
     background-position: right;
-    background-repeat: no-repeat;
-    -webkit-appearance: none;
-}
+    width: 6em;
 
-
-body > section > header {
-    background-image: url(images/thema_studenten.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 4.2em;
-    padding: 5% 20% 5% 5%;
 }
 
 /* main */
+
+main {
+    padding: 0.8em;
+}
 
 form {
     top: 18.75em;
 }
 
-main {
-    padding: 0.8em;
+fieldset {
+    border: none;
 }
 
 h4 {
