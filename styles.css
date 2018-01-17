@@ -24,6 +24,11 @@ body > header {
     z-index: 999;
 }
 
+header > a {
+    color: #223974;
+    text-decoration: none;
+}
+
 body > header > nav > ul {
     display: flex;
     justify-content: space-between;

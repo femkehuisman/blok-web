@@ -53,10 +53,9 @@ main > section > form > fieldset > section {
 main > section > form > fieldset > section > input {
     margin-bottom: 0.9em;
     margin-top: 0.9em;
-    padding-bottom: 2em;
     display: flex;
     border: 0.0625em solid #b5b5bc;
-    line-height: 1.56em;
+    line-height: 2.5em;
     outline: none;
 }
 
@@ -75,24 +74,28 @@ label {
 
 }
 
+input:valid {
+    border-color: green;
+    border-style: solid;
+}
+
 main > section > form > button {
     background-color: #2977BC;
     border: none;
     border-radius: 0;
     color: white;
     font-size: 0.9em;
-    margin-left: 1em;
     padding: 0.8em;
     text-align: left;
     width: 10em;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
 
 }
 
-main > section > form > button:hover {
+button:hover {
     background-color: #223974;
-    background-color: rgb(34, 57, 116)
+    background-color: rgb(34, 57, 116);
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
 }
 
 main > section > section > ul > li {

@@ -40,8 +40,24 @@ header > nav > ul > li {
 }
 
 h1 {
+    flex-grow: 1;
     font-size: 1.2em;
-    margin: 1.4em;
+    margin-left: 1.4em;
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header > a {
+    padding-top: 0.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1em;
 }
 
 header ul {
