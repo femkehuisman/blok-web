@@ -122,7 +122,7 @@ div {
 
 @media screen and (min-width: 36.250em) {
     main > img {
-        content: url(images/tablet_gefrustreerd.jpg);
+        content: url(../images/tablet_gefrustreerd.jpg);
 
     }
 }
@@ -131,7 +131,7 @@ div {
 
 @media screen and (min-width: 64.000em) {
     main > img {
-        content: url(images/laptop_gefrustreerd.jpg);
+        content: url(../images/laptop_gefrustreerd.jpg);
 
     }
 }

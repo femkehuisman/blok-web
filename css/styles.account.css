@@ -99,7 +99,7 @@ button:hover {
 }
 
 main > section > section > ul > li {
-    background-image: url(images/vinkje.svg);
+    background-image: url(../images/vinkje.svg);
     background-position: left;
     background-repeat: no-repeat;
     list-style: none;

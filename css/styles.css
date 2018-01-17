@@ -59,7 +59,7 @@ body > header > nav > ul > li > form {
 }
 
 body > section > header {
-    background-image: url(images/thema_studenten.jpg);
+    background-image: url(../images/thema_studenten.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,7 +92,7 @@ h3 {
 }
 
 select {
-    background-image: url(images/chevron.svg);
+    background-image: url(../images/chevron.svg);
     background-position: right;
     background-repeat: no-repeat;
     -webkit-appearance: none;
@@ -110,13 +110,13 @@ select {
 }
 
 header > nav > ul > li:last-child {
-    background-image: url(images/profiel.svg);
+    background-image: url(../images/profiel.svg);
     position: relative;
     width: 2em;
 }
 
 header > nav > ul > li:last-child > span {
-    background-image: url(images/profiel.svg);
+    background-image: url(../images/profiel.svg);
     position: absolute;
     color: #223974;
     top: 0%;
@@ -163,7 +163,7 @@ body > header > nav > ul > li > form > input {
 }
 
 header > nav > ul > li:first-child {
-    background-image: url(images/search.svg);
+    background-image: url(../images/search.svg);
     background-position: right;
     width: 6em;
 
