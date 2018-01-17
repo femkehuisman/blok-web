@@ -17,18 +17,25 @@ header {
 main {
     background-color: white;
     margin: 0.5em;
-    padding: 1em;
-    padding-bottom: 3em;
+    padding: 1em 1em 3em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h1 {
     color: #223974;
     font-weight: normal;
+    flex-basis: 100%;
 }
 
-main > section > form {
+ul {
+    padding: 0;
+}
+
+main > form {
     background-color: #F8C333;
-    flex-grow: 1;
+    flex-grow: 2;
     padding: 1em;
 }
 
@@ -37,19 +44,17 @@ fieldset {
     margin-left: 1em;
     margin-right: 1em;
     padding: 0;
-
 }
 
-main > section > form > fieldset > section > input {
+main > form > fieldset > ul > li > input {
     flex-grow: 1;
     margin-bottom: 0.9em;
     margin-top: 0.9em;
     line-height: 2.5em;
     outline: none;
-
 }
 
-main > section > form > fieldset > section {
+main > form > fieldset > ul > li {
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +84,7 @@ input:valid {
 }
 
 
-main > section > form > button {
+main > form > button {
     background-color: #2977BC;
     border: none;
     border-radius: 0;
@@ -100,7 +105,7 @@ button:hover {
     transition-duration: 1s;
 }
 
-main > section > section > ul > li {
+main > section > ul > li {
     background-image: url(../images/vinkje.svg);
     background-position: left;
     background-repeat: no-repeat;
@@ -110,19 +115,15 @@ main > section > section > ul > li {
 
 }
 
-main > section > section > a {
+main > section > a {
     color: #2977BC;
     display: flex;
     margin-left: 1em;
     margin-top: 1em;
 }
 
-main > section > section {
+main > section {
     flex-grow: 1;
-}
-
-main > section > section > ul {
-    padding: 0;
 }
 
 h2 {
@@ -131,22 +132,17 @@ h2 {
     font-weight: normal;
 }
 
-main > section {
-    display: flex;
-    flex-direction: column;
-}
-
 /*Breakpoint 1*/
 
 @media screen and (min-width: 36.250em) {
 
-    main > section > form > fieldset > section {
+    main > form > fieldset > ul > li {
         flex-direction: row;
     }
-    main > section > form > fieldset > section > label {
+    main > form > fieldset > ul > li > label {
         width: 6em;
     }
-    main > section > form > button {
+    main > form > button {
         margin-left: 8.9em;
     }
 }
@@ -161,17 +157,14 @@ main > section {
 
     main {
         padding-bottom: 5em;
+        flex-direction: row;
     }
 
-    main > section > form {
+    main > form {
         padding: 3em 1em;
     }
 
-
-    main > section:last-child {
-        flex-direction: row;
-    }
-    main > section > section {
+    main > section {
         margin-left: 3em;
     }
 }
