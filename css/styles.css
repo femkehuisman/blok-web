@@ -116,11 +116,10 @@ header > nav > ul > li:last-child {
 }
 
 header > nav > ul > li:last-child > span {
-    background-image: url(../images/profiel.svg);
     position: absolute;
     color: #223974;
-    top: 0%;
-    right: 0%;
+    top: 0;
+    right: 0;
     opacity: 0;
     transition: opacity 0.5s;
 }

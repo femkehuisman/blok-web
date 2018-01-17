@@ -1,9 +1,7 @@
-var confetti; //Opslaan van confetti var uit bron code
-
-document.querySelector(".submitComment").addEventListener("click",
+document.querySelector(".submitCommentButton").addEventListener("click",
     function (event) {
-        event.preventDefault();
-        confetti.start();
+        event.preventDefault(); //Voorkomt herladen van pagina
+        confetti.start(); //Starten van de confetti
     });
 
 
@@ -21,7 +19,10 @@ var retina = window.devicePixelRatio,
 
     // Local WindowAnimationTiming interface
     rAF = window.requestAnimationFrame,
-    cAF = window.cancelAnimationFrame || window.cancelRequestAnimationFrame;
+    cAF = window.cancelAnimationFrame || window.cancelRequestAnimationFrame,
+
+    // Reference to confetti object
+    confetti;
 
 // Local WindowAnimationTiming interface polyfill
 (function (w) {

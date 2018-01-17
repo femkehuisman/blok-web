@@ -2,14 +2,14 @@
 
 var addImageSrc = "images/add_white.svg";
 var deleteImageSrc = "images/remove_white.png";
-var addAlt = "Toevoegen aan lijst";
-var deleteAlt = "Verwijderen van lijst";
+var addAlt = "Toevoegen aan lijst"; //Alt text die dient als herkenning voor het herkennen van een add button
+var deleteAlt = "Verwijderen van lijst";  //Alt text die dient als herkenning voor het herkennen van een delete button
 var addedCount = 0;
 
 var searchInput = document.querySelector(".searchInput");
 var searchItem = document.querySelector(".searchItem");
 
-var addButtons = document.getElementsByClassName("addButton");
+var addButtons = document.getElementsByClassName("addButton"); //array van alle "add" buttons
 var itemsCounter = document.getElementById("itemsCounter");
 
 searchItem.addEventListener("click", showSearch); //als er op SearchItem (zoekicoon) wordt geklikt wordt showSearch uitgevoerd
@@ -18,19 +18,20 @@ searchInput.addEventListener("focusout", hideSearch); // als de focus niet meer 
 window.onload = function () {
     for (var i = 0; i < addButtons.length; i++) { //
         addButtons[i].addEventListener("click", function () {
-            onAddClick(this); //Geef het button html element mee aan functie
+            var button = this; //This is html button element
+            onAddClick(button); //Geef het button html element mee aan functie
         });
     }
 }
 
 function showSearch() {
     searchInput.classList.add('searchExpanded');
-    searchInput.focus();
+    searchInput.focus(); //Zorg dat cursor erin komt
 }
 
 function hideSearch() {
     searchInput.classList.remove('searchExpanded');
-    searchInput.blur();
+    searchInput.blur(); //Zorg dat cursor verdwijnt
 }
 
 //Aangeroepen bij het clicken op een add button. De geklikte button wordt meegegeven als "button"
