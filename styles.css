@@ -158,9 +158,6 @@ select {
     -webkit-appearance: none;
 }
 
-h5 {
-    display: none;
-}
 
 body > section > header {
     background-image: url(images/thema_studenten.jpg);
