@@ -7,7 +7,7 @@
         Account aanmaken
     </title>
     <meta content="initial-scale=1.0" name="viewport" />
-    <link href="css/styles.account.css" rel="stylesheet" />
+    <link href="css/styles_account.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -18,72 +18,65 @@
         <h1>
             MijnNS-account aanvragen
         </h1>
+
         <p> Vul de volgende gegevens in om uw MijnNS-account aan te vragen.</p>
-        <section>
-            <h3>formulier</h3>
-            <form action="#">
-                <fieldset>
-                    <legend>
-                        Gegevens
-                    </legend>
-                    <section>
-                        <h3>Voornaam</h3>
 
-                        <label for="name">
-                        Voornaam:
-                </label>
-
-                        <input id="name" required/>
-                    </section>
-
-                    <section>
-                        <h3>Achternaam</h3>
-                        <label for="surname">
-                            Achternaam:
-                </label>
-                        <input id="surname" required/>
-
-                    </section>
-
-                    <section>
-                        <h3>Emailadres</h3>
-                        <label for="mail">
-                        Emailadres:
-                </label>
-
-                        <input type="email" id="mail" name="email" minlength="8" required>
-                    </section>
-
-                    <section>
-                        <h3>Wachtwoord</h3>
-                        <label for="password">
-                            Wachtwoord:
-                </label>
-                        <input type="password" id="password" name="password" required>
-
-                    </section>
-                </fieldset>
-                <button>
-                    Aanvragen
-            </button>
-            </form>
-            <section>
-                <h3>Voordelen</h3>
-                <h2>
-                    MijnNS account aanmaken
-                </h2>
+        <form action="#">
+            <fieldset>
+                <legend>
+                    Gegevens
+                </legend>
                 <ul>
                     <li>
-                        Verhalen opslaan in een lijst
+                        <label for="name">
+                        Voornaam:
+                        </label>
+
+                        <input id="name" required/>
                     </li>
                     <li>
-                        Reacties achterlaten op verhalen
+                        <label for="surname">
+                            Achternaam:
+                        </label>
+                        <input id="surname" required/>
                     </li>
+
                     <li>
-                        Leeslijsten aanmaken naar jouw smaak
+                        <label for="mail">
+                        Emailadres:
+                        </label>
+
+                        <input type="email" id="mail" name="email" minlength="8" required>
+                    </li>
+
+                    <li>
+                        <label for="password">
+                            Wachtwoord:
+                        </label>
+                        <input type="password" id="password" name="password" required>
                     </li>
                 </ul>
-            </section>
+            </fieldset>
+            <button>
+                Aanvragen
+            </button>
+        </form>
+
+        <section>
+            <h2>
+                MijnNS account aanmaken
+            </h2>
+            <ul>
+                <li>
+                    Verhalen opslaan in een lijst
+                </li>
+                <li>
+                    Reacties achterlaten op verhalen
+                </li>
+                <li>
+                    Leeslijsten aanmaken naar jouw smaak
+                </li>
+            </ul>
         </section>
     </main>
 </body>

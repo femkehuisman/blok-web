@@ -16,27 +16,32 @@ header {
 main {
     background-color: white;
     margin: 0.5em;
-    padding: 1em;
-    padding-bottom: 3em;
-    padding-left: 2em;
+    padding: 1em 1em 3em 2em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1 {
+    flex-basis: 100%;
     color: #223974;
     font-weight: normal;
 }
 
-main > section > form {
-    flex-grow: 1;
+p {
+   flex-basis: 100%;
+    margin-bottom: 3em;
+}
+
+main > form {
+    flex-grow: 2;
 }
 
 fieldset {
     border-style: none;
     padding: 0;
-    margin-top: 3em
 }
 
-main > section > form > fieldset > section > input {
+main > form > fieldset > ul > li > input {
     flex-grow: 1;
     margin-bottom: 0.9em;
     margin-top: 0.9em;
@@ -45,12 +50,16 @@ main > section > form > fieldset > section > input {
 
 }
 
-main > section > form > fieldset > section {
+main > form > fieldset > ul {
+    padding: 0;
+}
+
+main > form > fieldset > ul > li {
     display: flex;
     flex-direction: column;
 }
 
-main > section > form > fieldset > section > input {
+main > form > fieldset > ul > li > input {
     margin-bottom: 0.9em;
     margin-top: 0.9em;
     display: flex;
@@ -62,8 +71,6 @@ main > section > form > fieldset > section > input {
 legend {
     color: #223974;
     font-size: 1.5em;
-    margin-bottom: 1em;
-    margin-top: 5em;
 }
 
 label {
@@ -79,7 +86,7 @@ input:valid {
     border-style: solid;
 }
 
-main > section > form > button {
+main > form > button {
     background-color: #2977BC;
     border: none;
     border-radius: 0;
@@ -93,41 +100,36 @@ main > section > form > button {
 
 button:hover {
     background-color: #223974;
-    background-color: rgb(34, 57, 116);
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
 }
 
-main > section > section > ul > li {
-    background-image: url(../images/vinkje.svg);
-    background-position: left;
-    background-repeat: no-repeat;
+main > section > ul > li {
+    background: url(../images/vinkje.svg) no-repeat left;
     list-style: none;
     margin-bottom: 0.8em;
     padding-left: 2.5em;
 
 }
 
-main > section > section {
+main > section {
     flex-grow: 1;
-    margin-top: 1em;
+    margin-top: 3em;
+    margin-left: 0;
 }
 
-main > section > section > ul {
+main > section > ul {
     padding: 0;
 }
 
 h2 {
+    margin: 0;
     color: #223974;
     font-size: 1em;
     font-weight: normal;
 }
 
-h3 {
-    display: none;
-}
-
-main > section {
+main {
     display: flex;
     flex-direction: column;
 }
@@ -144,13 +146,13 @@ main > p {
         margin: 1.5em;
     }
 
-    main > section > form > fieldset > section {
+    main > form > fieldset > ul > li {
         flex-direction: row;
     }
-    main > section > form > fieldset > section > label {
+    main > form > fieldset > ul > li > label {
         width: 6em;
     }
-    main > section > form > button {
+    main > form > button {
         margin-left: 8em;
     }
 }
@@ -168,17 +170,16 @@ main > p {
         margin: 0em 1.5em;
     }
 
-    main > section > form {
-        padding: 3em 1em;
-        padding-top: 0em;
-    }
-
-
-    main > section:last-child {
+    main {
         flex-direction: row;
     }
-    main > section > section {
+    main {
         margin-left: 3em;
         margin-top: 2.5em;
+    }
+
+    main > section {
+        margin-top: 0em;
+        margin-left: 3em;
     }
 }
