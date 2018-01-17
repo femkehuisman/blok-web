@@ -123,6 +123,10 @@ h2 {
     font-weight: normal;
 }
 
+h3 {
+    display: none;
+}
+
 main > section {
     display: flex;
     flex-direction: column;

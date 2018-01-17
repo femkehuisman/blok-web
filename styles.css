@@ -144,7 +144,7 @@ body > section > header > form > fieldset > select {
     width: 70%;
 }
 
-body > section > header > form > fieldset > legend {
+body > section > header > form > fieldset > legend > h3 {
     color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 500;
@@ -215,6 +215,10 @@ h2 {
 
 article p {
     margin: 1em;
+}
+
+h5 {
+    display: none;
 }
 
 article > p > a {

@@ -61,6 +61,10 @@ legend {
     margin-top: 5em;
 }
 
+h3 {
+    display: none;
+}
+
 label {
     display: flex;
     margin-bottom: auto;
